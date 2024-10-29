@@ -1,13 +1,197 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+nav {
+    background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: "League Spartan", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 16px;
+}
+
+.active {
+    color: orangered;
+}
+
+.lista {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+}
+
+.destino {
+    border: 1px solid gray;
+    padding: 8px 12px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.nombre {
+    font-size: 0.88em;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.situacion {
+    margin: 5px 0 10px;
+    font-size: 0.74em;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 24px;
+    line-height: 1;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.destino a, .aviso a {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 2px 12px 4px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.servicios {
+    text-align: center;
+    font-size: 1em;
+    margin-top: -15px;
+    font-weight: 300;
+}
+
+.precio {
+    position: absolute;
+    margin: 7px 7px;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    opacity: 0.70;
+}
+.volver {
+    position: absolute;
+    margin: 7px -60px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.70;
+}
+
+.imagenGrande {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+}
+
+.boton {
+    font-size: 0.75em;
+    background-color: orangered;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    padding: 3px 9px;
+    cursor: pointer;
+}
+
+.contratar {
+    background-color: green;
+}
+
+.anular {
+    background-color: red;
+}
+
+.contratar,.anular {
+    position: absolute;
+    margin: 7px -150px;
+}
+
+.anularRuta {
+    margin: 0 15px 3px;
+}
+
+.login {
+    padding-top: 20px;
+    width: 520px;
+    height: 180px;
+    border: 6px solid orangered;
+    border-radius: 12px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: orangered;
+}
+
+input {
+    color: orangered;
+    padding: 5px 9px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px dotted orangered;
+    border-radius: 5px 0 0 50px;
+    margin-left: 15px;
+    border-right: none;
+}
+
+.botonRegistro {
+    background-color: orangered;
+    color: white;
+    font-size: 1.1em;
+    padding: 4px 10px;
+    border: 1px solid orangered;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
